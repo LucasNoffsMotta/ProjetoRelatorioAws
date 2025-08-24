@@ -1,0 +1,56 @@
+Relatório de Implementação de Serviços AWS
+
+Data: 24/08/2025
+Empresa: Abstergo Industries
+Responsável: Lucas Motta
+
+Introdução:
+
+Este relatório apresenta o processo de implementação de ferramentas na empresa Abstergo Industries, realizado por Lucas Motta. O objetivo do projeto foi implementar três serviços AWS visando a diminuição de custos imediatos, otimização de recursos e escalabilidade da infraestrutura.
+
+Os serviços escolhidos foram:
+
+Amazon S3 Intelligent-Tiering → reduz custos de armazenamento ao mover objetos automaticamente entre camadas de acesso frequente e infrequente.
+
+Amazon EC2 Auto Scaling → otimiza o número de instâncias em execução, evitando gastos desnecessários durante períodos de baixa demanda.
+
+AWS Lambda → substitui servidores EC2 para tarefas pontuais, reduzindo custos com servidores ociosos.
+
+Descrição do Projeto
+
+O projeto de implementação de ferramentas foi feito em 3 etapas, cada uma com seus objetivos específicos:
+
+Etapa 1:
+
+Nome da ferramenta: Amazon S3 Intelligent-Tiering
+
+Foco da ferramenta: Redução de custos de armazenamento e otimização automática de objetos.
+
+Descrição de caso de uso: Arquivos de dados e logs antigos foram migrados para S3 Intelligent-Tiering, permitindo que objetos pouco acessados fossem movidos automaticamente para camadas de menor custo, mantendo acessibilidade imediata quando necessário.
+
+Etapa 2:
+
+Nome da ferramenta: Amazon EC2 Auto Scaling
+
+Foco da ferramenta: Escalabilidade automática e otimização de uso de instâncias.
+
+Descrição de caso de uso: As instâncias EC2 que suportam o sistema de pedidos e serviços da empresa foram configuradas com políticas de Auto Scaling, garantindo que apenas o número necessário de instâncias estivesse ativo de acordo com a demanda, reduzindo gastos com servidores ociosos.
+
+Etapa 3:
+
+Nome da ferramenta: AWS Lambda
+
+Foco da ferramenta: Execução de tarefas sob demanda sem necessidade de servidores permanentes.
+
+Descrição de caso de uso: Rotinas de processamento de dados pontuais foram migradas para funções Lambda, eliminando a necessidade de instâncias EC2 permanentes para essas tarefas e garantindo pagamento somente pelo tempo de execução.
+
+Conclusão:
+
+A implementação de ferramentas na empresa Abstergo Industries resultou em redução de custos imediatos, otimização de recursos e maior escalabilidade da infraestrutura, aumentando a eficiência e a produtividade da empresa. Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
+
+Anexos:
+
+Caso de Sucesso da Amazon.com - https://aws.amazon.com/pt/solutions/case-studies/amazon/
+
+
+
